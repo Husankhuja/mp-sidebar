@@ -9,11 +9,17 @@
 /coverage
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
 # next.js
 /.next/
 /out/
 
+<<<<<<< HEAD
+>>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
+=======
 >>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
 # production
 /build
@@ -21,7 +27,10 @@
 # misc
 .DS_Store
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
 *.pem
 
 # debug
@@ -30,6 +39,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+<<<<<<< HEAD
+>>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
+=======
 >>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
 .env.local
 .env.development.local
@@ -37,9 +49,14 @@ yarn-error.log*
 .env.production.local
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+# vercel
+.vercel
+>>>>>>> 68d98c75cda2874736d17d6012ab0a106d914801
 =======
 # vercel
 .vercel
