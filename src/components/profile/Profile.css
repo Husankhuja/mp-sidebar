@@ -1,0 +1,21 @@
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 168px;
+}
+.profile-border {
+    margin: 56px;
+}
+.profile-icons {
+    width: 428.68px;
+    height: 25.07px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    color: white;
+    font-size: 23px;
+}
