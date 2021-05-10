@@ -1,1 +1,0 @@
-export default ['mentorship', 'my wallet', 'my courses', 'my calendar', 'my chapter']

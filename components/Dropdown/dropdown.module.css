@@ -8,7 +8,6 @@
     font-family: 'Red Hat Display', sans-serif;
     color: #ffffff;
 }
-
 .dropdown {
     width: 95%;
     display: flex;
@@ -16,11 +15,12 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .links {
     width: 80%;
     margin: 30px auto;
     padding: 10px;
+    transition: display 2s;
+
 }
 .title {
     font-weight: 700;
@@ -34,7 +34,6 @@
     border-left: 1px #ffffff solid;
 
 }
-
 .a {
     padding-left: 2px;
     text-decoration: none;
@@ -42,8 +41,9 @@
     font-weight: 400;
     text-transform: capitalize;
     color: #ffffff;
-    /* border */
-    /* border-left: 2px #ffffff solid; */
+}
+.hide {
+    display: none;
 }
 
 
