@@ -22,6 +22,9 @@ export default function Index() {
         {linksArrTop.map((linksArrSub, index) => {
           return <Dropdown key={linksArrSub[0]} links={[...linksArrSub]}/>
         })}
+        <div className={Styles.question}>
+          <img src="./question-mark.png" alt="question" />
+        </div>
       </div>
     )
   }

@@ -1,5 +1,11 @@
 .sidebar {
     background-color: #151371;
     width: 371px;
-    height: 2718px;
+    height: 2000px;
+}
+.question {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
