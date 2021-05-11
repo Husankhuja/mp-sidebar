@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 10px;
 
     /* typography */
@@ -17,7 +17,7 @@
 }
 .links {
     width: 80%;
-    margin: 30px auto;
+    margin: 15px auto 0px;
     padding: 10px;
     transition: display 2s;
 
@@ -45,8 +45,9 @@
 .hide {
     display: none;
 }
-.question {
-    
+#dropMenuImg {
+    cursor: pointer;
 }
+
 
 

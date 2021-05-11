@@ -18,14 +18,15 @@ export default function Index({links}) {
         <div className={Styles.container}>
           <div className={Styles.dropdown}>
             <h4 className={Styles.title}>{linksTitle}</h4>
-            <img onClick={handleClick} src='./dropdown-icon.png' alt="dropdown-Icon" />
+            <img onClick={handleClick} src='./dropdown-icon.png' alt="dropdown-Icon" id={Styles.dropMenuImg}/>
           </div>
           <ul className={display === true ? Styles.links : Styles.links && Styles.hide}>
-            {links.map((link, index) => {
-                if(index > 0)
-                    return <li className={Styles.li} key={index}>
-                                <a className={Styles.a} href="#">{link}</a>
-                            </li>
+          {links.map((link, index) => {
+            if(index > 0){
+              return <li className={Styles.li} key={index}>
+                            <a className={Styles.a} href="#">{link}</a>
+                        </li>
+            }
             })}
           </ul>
         </div>
