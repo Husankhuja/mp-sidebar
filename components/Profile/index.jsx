@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const Profile = ({ username, profilePic }) => {
+const Profile = ({ userData }) => {
 
     return (
         <div className={Styles.profile}>
@@ -21,13 +21,12 @@ const Profile = ({ username, profilePic }) => {
                         trailColor: '#fff',
                     })}
                 >
-                    <img className={Styles.profilePic} src="/pic.png" layout="fill" />
-                    {/* <img className="profile-pic" src={profilePic} /> */}
+                    <img className={Styles.profilePic} src={userData.profilePic} layout="fill" />
 
                 </CircularProgressbarWithChildren>
             </div>
 
-            <p className={Styles.username}>David</p>
+            <p className={Styles.username}>{userData.username}</p>
             <div className={Styles.profileIcons}>
                 <IconContext.Provider value={{ className: Styles.icon }} >
                     <MdPerson />

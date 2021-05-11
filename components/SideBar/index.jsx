@@ -3,6 +3,7 @@ import Profile from '../Profile/index';
 import Button from '../Button/index';
 import Dropdown from '../Dropdown/index';
 import ListOfLinks from '../../public/Links/ListOfLinks';
+import userData from '../../public/userData';
 
 // styles
 import Styles from './sidebar.module.css';
@@ -21,7 +22,7 @@ export default function Index() {
   return (
     <div className={Styles.sidebar}>
       <SideBarHeader />
-      <Profile />
+      <Profile userData={userData} />
       <Button />
       {linksArrTop.map((linksArrSub, index) => {
         return <Dropdown key={linksArrSub[0]} links={[...linksArrSub]} />
