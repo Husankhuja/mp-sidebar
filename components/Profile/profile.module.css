@@ -7,7 +7,9 @@
     align-items: center;
     position: relative;
     width: 25.20vw;
-    /* height: 29.15vw; */
+/* 
+    height: 29.15vw;
+    margin: 9vh auto; */
 }
 .username {
     color: white;

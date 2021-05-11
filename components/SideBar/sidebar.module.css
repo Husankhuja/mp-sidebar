@@ -1,8 +1,12 @@
 .sidebar {
     background-color: #151371;
     width: 25.33vw;
-    height: 2718px;
-    /* height: 120.59vw */
+    /* height: 2718px; */
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .question {
     width: 80%;
