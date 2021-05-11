@@ -1,0 +1,26 @@
+.sideBarHeader {
+    width: 25.20vw;
+    height: 7.41vw;
+    border-bottom: 1px solid white;
+}
+.logo {
+    position: absolute;
+    width: 6.48vw;
+    height: 5.28vw;
+    left: 1.64vw;
+    top: 0.44vw;
+}
+.title {
+    position: absolute;
+    left: 9.54%;
+    top: 2.71vw;
+
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.33vw;
+    line-height: 1.77vw;
+
+
+    color: #FFFFFF;
+}
