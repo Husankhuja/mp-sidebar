@@ -4,3 +4,9 @@
     height: 2718px;
     /* height: 120.59vw */
 }
+.question {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -4,7 +4,7 @@ import Styles from './dropdown.module.css';
 
 export default function Index({links}) {
     const linksTitle = links[0];
-    const [display, setDisplay] = useState(true);
+    const [display, setDisplay] = useState(false);
 
     const handleClick = () => {
       if(display === true)
