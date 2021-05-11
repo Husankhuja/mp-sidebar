@@ -6,9 +6,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 0.04vw;
     width: 25.20vw;
-    height: 29.15vw;
+    /* height: 29.15vw; */
 }
 .username {
     color: white;
@@ -23,16 +22,16 @@
 .profileBorder {
     height: 10.65vw;
     width: 10.65vw;
-    margin: 1.20vw;
+    margin: 2vw 0 1.20vw 0;
 }
 .profilePic {
-    width: 9.36vw;
-    height: 9.36vw;
+    width: 9.20vw;
+    height: 9.20vw;
 }
 .profileIcons {
     width: 19.02vw;
     height: 1.11vw;
-    margin: 2.22vw;
+    margin: 2.22vw 0;
     display: flex;
     justify-content: space-between;
 }

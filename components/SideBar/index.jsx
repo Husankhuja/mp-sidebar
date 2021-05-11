@@ -1,5 +1,6 @@
 import SideBarHeader from '../SideBarHeader/index';
 import Profile from '../Profile/index';
+import Button from '../Button/index';
 import Dropdown from '../Dropdown/index';
 import ListOfLinks from '../../public/Links/ListOfLinks';
 
@@ -21,6 +22,7 @@ export default function Index() {
     <div className={Styles.sidebar}>
       <SideBarHeader />
       <Profile />
+      <Button />
       {linksArrTop.map((linksArrSub, index) => {
         return <Dropdown key={linksArrSub[0]} links={[...linksArrSub]} />
       })}
