@@ -1,18 +1,35 @@
 import React from 'react';
-import './profile.module.css';
-// import profilePic from './profilePic.svg';
+import Styles from './profile.module.css';
 import { MdPerson, MdWork, MdPlaylistAddCheck, MdPeople } from "react-icons/md";
 import { IconContext } from "react-icons";
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
+const Profile = ({ username, profilePic }) => {
 
-const Profile = () => {
     return (
-        <div className="profile">
-            <div className="profile-border">
-                {/* <img className="profile-pic" src={profilePic} /> */}
+        <div className={Styles.profile}>
+
+            <div className={Styles.profileBorder}>
+                <CircularProgressbarWithChildren
+                    value={75}
+                    className={Styles.progressBar}
+                    styles={buildStyles({
+                        rotation: 0.25,
+                        strokeLinecap: 'butt',
+                        pathColor: '#FFC700',
+                        trailColor: '#fff',
+                    })}
+                >
+                    <img className={Styles.profilePic} src="/pic.png" layout="fill" />
+                    {/* <img className="profile-pic" src={profilePic} /> */}
+
+                </CircularProgressbarWithChildren>
             </div>
-            <div className="profile-icons">
-                <IconContext.Provider value={{ className: "icon" }} >
+
+            <p className={Styles.username}>David</p>
+            <div className={Styles.profileIcons}>
+                <IconContext.Provider value={{ className: Styles.icon }} >
                     <MdPerson />
                     <MdWork />
                     <MdPlaylistAddCheck />
