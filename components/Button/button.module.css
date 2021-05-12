@@ -38,6 +38,18 @@ color: #FFFFFF;
 /* for screen sizes from 1024-1920 */
 @media only screen and (max-width: 1920px) {
     .button {
+        width: 274px;
+        height: 55px;
+        margin: 42px auto;
+        border-radius: 18px;
+    }
+    .button p {
+        font-size: 22px;
+        line-height: 15px;
+    } 
+}
+@media only screen and (max-width: 1024px) {
+    .button {
         width: 207px;
         height: 42px;
         margin: 32px auto;

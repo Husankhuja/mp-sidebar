@@ -27,8 +27,17 @@
         margin: 38px;
     }
 }
-/* for screen sizes from 1024 - 1920  */
 @media only screen and (max-width: 1920px) {
+    .sidebar {
+        width: 340px;
+    }   
+    .question {
+        width: 30px;
+        margin: 27px;
+    }
+}
+/* for screen sizes from 1024 - 1920  */
+@media only screen and (max-width: 1024px) {
     .sidebar {
         width: 258px;
     }

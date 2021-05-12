@@ -67,6 +67,30 @@
 /* for screen sizes from 1024 - 1920  */
 @media only screen and (max-width: 1920px) {
     .profileBorder {
+        height: 147px;
+        width: 147px;
+        margin: 28px 0;
+    }
+    .profilePic {
+        width: 126px;
+        height: 126px;
+    }
+    
+    .username {
+        font-size: 18px;
+    }
+    
+    .profileIcons {
+        width: 270px;
+        height: 15px;
+        margin-top: 30px;
+    }
+    .icon {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .profileBorder {
         height: 112px;
         width: 112px;
         margin: 21px 0;

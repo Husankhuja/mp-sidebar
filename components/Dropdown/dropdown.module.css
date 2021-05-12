@@ -78,6 +78,31 @@
 /* for screen sizes from 1024 - 1920 */
 @media only screen and (max-width: 1920px) {
     .container {
+        margin: 6px 17px;
+        padding: 6px;
+    }
+    .title {
+        font-size: 22px;
+        line-height: 29px;
+        margin-right: 6px;
+    }
+    .dropdown img {
+        width: 22px;
+    }
+    .links {
+        margin: 9px 12px;
+        padding: 0 12px;
+    }
+    .li {
+        margin: 21px 0;
+    }
+    .a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .container {
         margin: 4.5px 24px;
         padding: 4.5px;
     }

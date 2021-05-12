@@ -36,6 +36,20 @@
 /* for screen sizes from 1024 - 1920 */
 @media only screen and (max-width: 1920px) {
     .sideBarHeader {
+        height: 100px;
+        padding: 0 28px;
+    }
+    .logo {
+        width: 87px;
+        height: 70px;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .sideBarHeader {
         height: 76px;
         padding: 0 21px;
     }
