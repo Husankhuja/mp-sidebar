@@ -1,32 +1,21 @@
 import SideBarHeader from '../SideBarHeader/index';
 import Profile from '../Profile/index';
 import Button from '../Button/index';
-import Dropdown from '../Dropdown/index';
+import SideBarNav from '../SideBarNav/index';
 import ListOfLinks from '../../public/Links/ListOfLinks';
 import userData from '../../public/userData';
 
 // styles
 import Styles from './sidebar.module.css';
 
-{/*
-Dropdown is a component that will take in a multi dimensional array of links
-in order to create the links dynamically.
-Links will be imported from one file in the public
-folder, the file will have an array of arrays,
-where each array has the first index as the title and the rest are strings 
-with links names. The links will be imported and named 
-appropriately. 
-*/}
+
 export default function Index() {
-  const linksArrTop = [...ListOfLinks];
   return (
     <div className={Styles.sidebar}>
       <SideBarHeader />
       <Profile userData={userData} />
       <Button />
-      {linksArrTop.map((linksArrSub, index) => {
-        return <Dropdown key={linksArrSub[0]} links={[...linksArrSub]} />
-      })}
+      <SideBarNav linksArrTop={ListOfLinks} />
       <div className={Styles.question}>
         <img src="./question-mark.png" alt="question" />
       </div>

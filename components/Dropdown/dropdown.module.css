@@ -1,53 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 .container {
-    width: 80%;
-    margin: 30px auto;
+    margin: 10px 53px;
     padding: 10px;
-
-    /* typography */
-    font-family: 'Red Hat Display', sans-serif;
     color: #ffffff;
 }
 .dropdown {
-    width: 95%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.links {
-    width: 80%;
-    margin: 15px auto 0px;
-    padding: 10px;
-    transition: display 2s;
-
-}
 .title {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 36px;
+    line-height: 48px;
     text-transform: capitalize;
+    margin-right: 10px;
 }
+/* Nav*/
+.links {
+    width: auto;
+    margin: 15px 20px;
+    padding: 0 20px;
+    transition: display 2s;
+    border-left: 1px #ffffff solid;
+}
+
 .li {
     list-style: none;
-    padding: 8px;
-
-    border-left: 1px #ffffff solid;
-
+    margin: 35px 0;
 }
+
 .a {
-    padding-left: 2px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
     text-transform: capitalize;
     color: #ffffff;
 }
+
 .hide {
     display: none;
 }
 #dropMenuImg {
     cursor: pointer;
 }
-
-
-

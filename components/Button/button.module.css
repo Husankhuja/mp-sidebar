@@ -3,20 +3,22 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20.23vw;
-    height: 4.037vw;
-    margin: 3.11vw auto;
+    width: 456px;
+    height: 91px;
+    margin: 70px auto;
     background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+.button:hover {
+    cursor: pointer;
 }
 .button p {
 
 font-family: 'Red Hat Display';
 font-style: normal;
-font-weight: 700;
-font-size: 1.60vw;
-line-height: 2.13vw;
-
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
 color: #FFFFFF;
 }

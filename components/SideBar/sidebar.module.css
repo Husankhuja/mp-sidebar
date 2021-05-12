@@ -1,16 +1,15 @@
 .sidebar {
     background-color: #151371;
-    width: 25.33vw;
+    width: 571px;
     /* height: 2718px; */
     min-height: 100vh;
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .question {
-    width: 80%;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
+    width: 50px;
+    margin: 45px;
+    position: relative;
 }
