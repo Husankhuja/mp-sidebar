@@ -17,6 +17,9 @@
     text-transform: capitalize;
     margin-right: 10px;
 }
+.dropdown img {
+    width: 36px;
+}
 /* Nav*/
 .links {
     width: auto;
@@ -45,4 +48,56 @@
 }
 #dropMenuImg {
     cursor: pointer;
+}
+/* for screen sizes from 1920 - 2254 */
+@media only screen and (max-width: 2254px) {
+    .container {
+        margin: 8.5px 45px;
+        padding: 8.5px;
+    }
+    .title {
+        font-size: 31px;
+        line-height: 41px;
+        margin-right: 8.5px;
+    }
+    .dropdown img {
+        width: 31px;
+    }
+    .links {
+        margin: 13px 17px;
+        padding: 0 17px;
+    }
+    .li {
+        margin: 30px 0;
+    }
+    .a {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+/* for screen sizes from 1024 - 1920 */
+@media only screen and (max-width: 1920px) {
+    .container {
+        margin: 4.5px 24px;
+        padding: 4.5px;
+    }
+    .title {
+        font-size: 17px;
+        line-height: 22px;
+        margin-right: 4.5px;
+    }
+    .dropdown img {
+        width: 17px;
+    }
+    .links {
+        margin: 7px 9px;
+        padding: 0 9px;
+    }
+    .li {
+        margin: 16px 0;
+    }
+    .a {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

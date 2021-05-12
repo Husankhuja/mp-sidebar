@@ -22,3 +22,29 @@ font-size: 36px;
 line-height: 48px;
 color: #FFFFFF;
 }
+/* for screen sizes from 1920 - 2254 */
+@media only screen and (max-width: 2254px) {
+    .button {
+        width: 389px;
+        height: 78px;
+        margin: 60px auto;
+        border-radius: 26px;
+    }
+    .button p {
+        font-size: 31px;
+        line-height: 41px;
+    }
+}
+/* for screen sizes from 1024-1920 */
+@media only screen and (max-width: 1920px) {
+    .button {
+        width: 207px;
+        height: 42px;
+        margin: 32px auto;
+        border-radius: 14px;
+    }
+    .button p {
+        font-size: 17px;
+        line-height: 22px;
+    } 
+}

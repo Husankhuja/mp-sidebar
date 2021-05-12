@@ -39,3 +39,53 @@
     font-size: 25px;
     cursor: pointer;
 }
+/* for screen sizes from 1920 - 2254 */
+@media only screen and (max-width: 2254px) {
+    .profileBorder {
+        height: 209px;
+        width: 209px;
+        margin: 40px 0;
+    }
+    .profilePic {
+        width: 179px;
+        height: 179px;
+    }
+    
+    .username {
+        font-size: 26px;
+    }
+    
+    .profileIcons {
+        width: 384px;
+        height: 21px;
+        margin-top: 43px;
+    }
+    .icon {
+        font-size: 21px;
+    }
+}
+/* for screen sizes from 1024 - 1920  */
+@media only screen and (max-width: 1920px) {
+    .profileBorder {
+        height: 112px;
+        width: 112px;
+        margin: 21px 0;
+    }
+    .profilePic {
+        width: 95px;
+        height: 95px;
+    }
+    
+    .username {
+        font-size: 14px;
+    }
+    
+    .profileIcons {
+        width: 204px;
+        height: 11px;
+        margin-top: 23px;
+    }
+    .icon {
+        font-size: 16px;
+    }
+}
