@@ -27,6 +27,7 @@
         margin: 38px;
     }
 }
+/* for screen sizes from 1024 - 1920  */
 @media only screen and (max-width: 1920px) {
     .sidebar {
         width: 340px;
@@ -36,13 +37,21 @@
         margin: 27px;
     }
 }
-/* for screen sizes from 1024 - 1920  */
 @media only screen and (max-width: 1024px) {
     .sidebar {
         width: 258px;
     }
     .question {
         width: 23px;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .sidebar {
+        width: 200px;
+    }
+    .question {
+        width: 18px;
         margin: 20px;
     }
 }

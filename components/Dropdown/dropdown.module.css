@@ -126,3 +126,28 @@
         line-height: 18px;
     }
 }
+@media only screen and (max-width: 400px) {
+    .container {
+        margin: 4.5px 16px;
+        padding: 4.5px;
+    }
+    .title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-right: 4.5px;
+    }
+    .dropdown img {
+        width: 16px;
+    }
+    .links {
+        margin: 7px 9px;
+        padding: 0 9px;
+    }
+    .li {
+        margin: 16px 0;
+    }
+    .a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
