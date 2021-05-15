@@ -6,3 +6,23 @@
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #F1F1F1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #C0C0C0; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C0C0C0; 
+  }
