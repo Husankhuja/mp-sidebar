@@ -12,6 +12,9 @@ import Styles from './sidebar.module.css';
 
 export default function SideBar() {
   const [display, setDisplay] = useState(false);
+  const toggleDisplay = () => {
+    setDisplay(!display);
+  }
   return (
     <div className={display === true ? Styles.sidebar : `${Styles.sidebar} ${Styles.sidebarDisplay}`}>
       <SideBarHeader />
