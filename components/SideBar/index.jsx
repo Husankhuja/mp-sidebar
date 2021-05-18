@@ -10,13 +10,9 @@ import userData from '../../public/userData';
 import Styles from './sidebar.module.css';
 
 
-export default function SideBar() {
-  const [display, setDisplay] = useState(false);
-  const toggleDisplay = () => {
-    setDisplay(!display);
-  }
+export default function SideBar({ Open = false }) {
   return (
-    <div className={display === true ? Styles.sidebar : `${Styles.sidebar} ${Styles.sidebarDisplay}`}>
+    <div className={Open === true ? Styles.sidebar : `${Styles.sidebar} ${Styles.sidebarDisplay}`}>
       <SideBarHeader />
       <Profile userData={userData} />
       <Button />
