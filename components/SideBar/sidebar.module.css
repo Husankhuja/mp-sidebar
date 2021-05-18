@@ -9,12 +9,21 @@
     position: fixed;
     overflow-y: scroll;
 }
-
-
+.sidebarDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 /* for screen sizes from 1920 - 2254 */
 
 @media only screen and (max-width: 1150px) {
     .sidebar {
         width: 230px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebarDisplay {
+        display: none;
     }
 }
