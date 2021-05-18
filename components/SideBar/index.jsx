@@ -16,9 +16,6 @@ export default function Index() {
       <Profile userData={userData} />
       <Button />
       <SideBarNav linksArrTop={ListOfLinks} />
-      <div className={Styles.question}>
-        <img src="./question-mark.png" alt="question" />
-      </div>
     </div>
   )
 }

@@ -7,20 +7,19 @@
 }
 
 .profileBorder {
-    height: 245px;
-    width: 245px;
-    margin: 47px 0;
+    height: 147px;
+    width: 147px;
+    margin: 28px 0;
 }
 .profilePic {
-    width: 210px;
-    height: 210px;
+    width: 126px;
+    height: 126px;
     border-radius: 50%;
 }
-
 .username {
     color: white;
     font-family: 'Red Hat Display',sans-serif;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 92.3%;
     letter-spacing: 0em;
     font-weight: 700;
@@ -28,67 +27,18 @@
 }
 
 .profileIcons {
-    width: 450px;
-    height: 25px;
-    margin-top: 50px;
+    width: 80%;
+    height: 15px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 .icon {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     cursor: pointer;
 }
-/* for screen sizes from 1920 - 2254 */
-@media only screen and (max-width: 2254px) {
-    .profileBorder {
-        height: 209px;
-        width: 209px;
-        margin: 40px 0;
-    }
-    .profilePic {
-        width: 179px;
-        height: 179px;
-    }
-    
-    .username {
-        font-size: 26px;
-    }
-    
-    .profileIcons {
-        width: 384px;
-        height: 21px;
-        margin-top: 43px;
-    }
-    .icon {
-        font-size: 21px;
-    }
-}
-/* for screen sizes from 1024 - 1920  */
-@media only screen and (max-width: 1920px) {
-    .profileBorder {
-        height: 147px;
-        width: 147px;
-        margin: 28px 0;
-    }
-    .profilePic {
-        width: 126px;
-        height: 126px;
-    }
-    
-    .username {
-        font-size: 18px;
-    }
-    
-    .profileIcons {
-        width: 270px;
-        height: 15px;
-        margin-top: 30px;
-    }
-    .icon {
-        font-size: 18px;
-    }
-}
+
 @media only screen and (max-width: 1024px) {
     .profileBorder {
         height: 112px;
@@ -105,16 +55,11 @@
     }
     
     .profileIcons {
-        width: 204px;
+        /* width: 204px; */
         height: 11px;
         margin-top: 23px;
     }
     .icon {
         font-size: 16px;
-    }
-}
-@media only screen and (max-width: 400px) {
-    .profileIcons {
-        width: 170px;
     }
 }

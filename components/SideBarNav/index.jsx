@@ -18,6 +18,9 @@ const SideBarNav = ({ linksArrTop }) => {
             {Object.keys(linksArrTop).map((arrayKey, index) => (
                 <Dropdown key={index} linksTitle={arrayKey} links={linksArrTop[arrayKey]} />
             ))}
+            <div className={Styles.questionImg}>
+                <img  src="./question-mark.png" alt="question" />
+            </div>
         </div>
     );
 }

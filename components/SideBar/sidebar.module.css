@@ -1,57 +1,20 @@
 .sidebar {
     background-color: #151371;
-    width: 571px;
+    width: 20%;
     /* height: 2718px; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: fixed;
+    overflow-y: scroll;
 }
-.question {
-    align-self: flex-end;
-    justify-self: flex-end;
-    width: 50px;
-    margin: 45px;
-    position: relative;
-}
-.question img {
-    width: 100%;
-}
+
+
 /* for screen sizes from 1920 - 2254 */
-@media only screen and (max-width: 2254px) {
+
+@media only screen and (max-width: 1150px) {
     .sidebar {
-        width: 484px;
-    }
-    .question {
-        width: 42px;
-        margin: 38px;
-    }
-}
-/* for screen sizes from 1024 - 1920  */
-@media only screen and (max-width: 1920px) {
-    .sidebar {
-        width: 340px;
-    }   
-    .question {
-        width: 30px;
-        margin: 27px;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .sidebar {
-        width: 258px;
-    }
-    .question {
-        width: 23px;
-        margin: 20px;
-    }
-}
-@media only screen and (max-width: 400px) {
-    .sidebar {
-        width: 200px;
-    }
-    .question {
-        width: 18px;
-        margin: 20px;
+        width: 230px;
     }
 }

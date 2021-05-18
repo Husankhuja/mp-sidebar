@@ -1,7 +1,19 @@
 .sideBarNav {
     width: auto;
-    height: auto;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.questionImg {
+    width: 95%;
+    margin: 5px auto;
+}
+.questionImg img {
+    width: 10%;
+    position: relative;
+    left: 28vh;
+
 }
