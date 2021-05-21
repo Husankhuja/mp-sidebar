@@ -1,19 +1,25 @@
 .sideBarNav {
     width: auto;
     height: 40vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .questionImg {
     width: 95%;
     margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    
 }
 .questionImg img {
-    width: 10%;
-    position: relative;
-    left: 28vh;
-
+    width: 12%;
 }

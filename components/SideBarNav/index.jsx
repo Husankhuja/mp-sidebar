@@ -12,14 +12,18 @@ with links names. The links will be imported and named
 appropriately. 
 */}
 
-const SideBarNav = ({ linksArrTop }) => {
+const SideBarNav = ({ linksArrTop}) => {
     return (
         <div className={Styles.sideBarNav}>
             {Object.keys(linksArrTop).map((arrayKey, index) => (
-                <Dropdown key={index} linksTitle={arrayKey} links={linksArrTop[arrayKey]} />
+                <Dropdown 
+                    key={index} 
+                    linksTitle={arrayKey} 
+                    links={linksArrTop[arrayKey]} 
+                />
             ))}
             <div className={Styles.questionImg}>
-                <img  src="./question-mark.png" alt="question" />
+                <img  src="./question-mark.png" alt="question"/>
             </div>
         </div>
     );

@@ -9,6 +9,8 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+/* Scrollbar styles */
+
 /* width */
 ::-webkit-scrollbar {
     width: 9px;

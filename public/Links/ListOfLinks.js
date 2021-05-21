@@ -1,4 +1,5 @@
 export default {
+    'home': [],
     'dashboard': ['my wallet', 'my courses', 'my calendar', 'my chapter', 'my startups', 'my projects', 'messages'],
     'mentorship': ['status', 'my mentors', 'assignments'],
     'create': ['status'],

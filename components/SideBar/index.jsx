@@ -1,8 +1,8 @@
+import React, { Children, useEffect } from 'react'
 import SideBarHeader from '../SideBarHeader/index';
 import Profile from '../Profile/index';
 import Button from '../Button/index';
 import SideBarNav from '../SideBarNav/index';
-import { useState } from 'react';
 import ListOfLinks from '../../public/Links/ListOfLinks';
 import userData from '../../public/userData';
 
@@ -15,7 +15,7 @@ export default function SideBar({ Open = false }) {
     <div className={Open === true ? Styles.sidebar : `${Styles.sidebar} ${Styles.sidebarDisplay}`}>
       <SideBarHeader />
       <Profile userData={userData} />
-      <Button />
+      {/* <Button /> */}
       <SideBarNav linksArrTop={ListOfLinks} />
     </div>
   )
