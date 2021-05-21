@@ -9,7 +9,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <Sidebar Open={open} />
+      <Sidebar Open={open} setOpen={setOpen} />
       <DashNav Open={open} setOpen={setOpen} />
     </div>
   )

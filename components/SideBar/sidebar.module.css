@@ -1,18 +1,36 @@
+.overlay {
+    background: transparent;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.blue {
+    background: blue;
+}
 .sidebar {
     background-color: #151371;
     width: 20%;
     /* height: 2718px; */
+    z-index: 100;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
     overflow-y: scroll;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s linear;
 }
 .sidebarDisplay {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s linear;
 }
 /* for screen sizes from 1920 - 2254 */
 
@@ -24,6 +42,10 @@
 
 @media only screen and (max-width: 600px) {
     .sidebarDisplay {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay {
+        display: block;
     }
 }
