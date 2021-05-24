@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './sidebarheader.module.css';
+import Styles from '../styles/sidebarheader.module.css';
 
 
 const SideBarHeader = () => {

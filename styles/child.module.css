@@ -1,0 +1,16 @@
+.child {
+    background-color: red;
+    width: 80%;
+    margin: 20px;
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+    top: 20px;
+}
+.child h2{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}

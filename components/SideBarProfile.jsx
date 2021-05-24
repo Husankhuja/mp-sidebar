@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './profile.module.css';
+import Styles from '../styles/profile.module.css';
 import { MdPerson, MdWork, MdPlaylistAddCheck, MdPeople } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
