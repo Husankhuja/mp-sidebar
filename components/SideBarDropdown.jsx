@@ -7,25 +7,18 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
     //Default display is none for sublinks
     const [display, setDisplay] = useState(false);
 
-    //Default active class is applied on HOME header
-    const [activeElement, setActiveElement] = useState('home');
-
     const handleClick = (e) => {
-        let header = e.target.parentElement.firstChild.innerText.toLowerCase();
-
         if (display === true) {
             setDisplay(false);
-            setActiveElement('home');
         }
         else if (display === false) {
             setDisplay(true);
-            setActiveElement(header);
         }
 
     }
     return (
         <div className={Styles.container}>
-            <div className={linksTitle === activeElement
+            <div className={linksTitle === parent
                 ? Styles.dropdown + " " + Styles.active
                 : Styles.dropdown}
             >
