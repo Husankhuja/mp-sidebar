@@ -19,8 +19,9 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
     return (
         <div className={Styles.container}>
             <div className={linksTitle === parent
-                ? Styles.dropdown + " " + Styles.active
+                ? Styles.dropdown + " " + Styles.active 
                 : Styles.dropdown}
+                onClick={handleClick}
             >
                 <h4
                     className={Styles.title}

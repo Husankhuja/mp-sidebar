@@ -12,21 +12,14 @@
 /* Scrollbar styles */
 
 /* width */
-::-webkit-scrollbar {
-    width: 9px;
-  }
-  
   /* Track */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
   ::-webkit-scrollbar-track {
-    background: #F1F1F1; 
+    border: none;
   }
-   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #C0C0C0; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #C0C0C0; 
+    background-color:  #FF00B8;
+    border-radius: 5px;
   }

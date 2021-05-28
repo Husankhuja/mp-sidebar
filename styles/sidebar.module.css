@@ -12,6 +12,7 @@
 .sidebar {
     background-color: #151371;
     width: 20%;
+    
     /* height: 2718px; */
     z-index: 100;
     min-height: 100vh;
