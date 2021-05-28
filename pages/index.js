@@ -15,6 +15,7 @@ export default function Home() {
       <Sidebar Open={open} setOpen={setOpen} parent={parent} setParent={setParent} children={children} setChildren={setChildren} />
       <DashNav Open={open} setOpen={setOpen} />
       <ParentComponent page={parent} children={children} setChildren={setChildren} />
+      <div className="tw-mt-10"></div>
     </div>
   )
 }

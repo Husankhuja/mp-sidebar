@@ -11,15 +11,15 @@
 
 .questionImg {
     width: 95%;
-    margin: 5px auto;
+    margin: 2px auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     
 }
 .questionImg img {
-    width: 12%;
+    width: 8%;
 }
