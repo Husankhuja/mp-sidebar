@@ -1,16 +1,24 @@
 .child {
-    background-color: red;
-    width: 80%;
-    margin: 20px;
+    background-color: #fff;
+    width: 72.5%;
+    margin: 40px 20px;
     border-radius: 20px;
     height: 200px;
     position: relative;
+    left: 22.5%;    
     top: 20px;
 }
-.child h2{
-    color: white;
+.child h2{  
     font-size: 25px;
     position: relative;
     top: 20px;
     left: 10px;
+    width: 80%;
+}
+.child p {
+    position: relative;
+    left: 10px;
+    margin-top: 40px;
+    width: 80%;
+
 }
