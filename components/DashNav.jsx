@@ -18,8 +18,6 @@ import { FiSun } from 'react-icons/fi';
 import Notifications from './Notifications';
 import UserDropDown from './UserDropDown';
 
-import Styles from '../styles/dashnav.module.css';
-
 const Navbar = ({ Open = false, setOpen, user }) => {
     const [notice, setNotice] = useState(false);
     const [Log, setLog] = useState(false);
@@ -32,10 +30,8 @@ const Navbar = ({ Open = false, setOpen, user }) => {
     }, []);
 
     return (
-        <div className={Styles.DashNavContainer} >
-            <div
-                className={` tw-w-full tw-h-16 tw-col-start-1 tw-bg-white lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl tw-border-b tw-border-gray-200 `}
-            >
+        <div className="tw-col-span-2 tw-h-16" >
+            <div className="tw-fixed tw-z-10 tw-w-full tw-h-16 tw-col-start-1 tw-bg-white lg:tw-col-start-3 tw-col-end-13  tw-row-start-1 tw-row-end-2   tw-shadow-2xl tw-border-b tw-border-gray-200">
                 <ToastContainer />
                 <div className="tw-flex tw-justify-between tw-items-center  ">
                     <div
