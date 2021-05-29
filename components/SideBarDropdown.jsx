@@ -7,7 +7,7 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
     //Default display is none for sublinks
     const [display, setDisplay] = useState(false);
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         if (display === true) {
             setDisplay(false);
         }
