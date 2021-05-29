@@ -33,28 +33,29 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
                     />
                     : null}
             </div>
-            <ul className={display === true ? Styles.links : Styles.links + " " + Styles.hide}>
-                {links.map((link, index) => (
-                    <li
-                        className={Styles.li}
-                        key={index}
-                        onClick={() => {
-                            if (children.includes(link)) {
-                                setChildren(children.filter(child => child != link));
-                            } else {
-                                if (linksTitle != parent) {
-                                    setParent(linksTitle);
-                                    setChildren([link]);
+            {links.length > 0 ?
+                <ul className={display === true && linksTitle === parent ? Styles.links : Styles.links + " " + Styles.hide}>
+                    {links.map((link, index) => (
+                        <li
+                            className={`${index == 0 || index == links.length - 1 ? Styles.edge : ''} ${Styles.li}`}
+                            key={index}
+                            onClick={() => {
+                                if (children.includes(link)) {
+                                    setChildren(children.filter(child => child != link));
                                 } else {
-                                    setChildren([...children, link]);
+                                    if (linksTitle != parent) {
+                                        setParent(linksTitle);
+                                        setChildren([link]);
+                                    } else {
+                                        setChildren([...children, link]);
+                                    }
                                 }
-                            }
-                        }}
-                    >
-                        <span className={Styles.a}>{link}</span>
-                    </li>
-                ))}
-            </ul>
+                            }}
+                        >
+                            <span className={Styles.a}>{link}</span>
+                        </li>
+                    ))}
+                </ul> : ''}
         </div>
     )
 }
