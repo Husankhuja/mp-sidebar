@@ -1,24 +1,22 @@
 .child {
     background-color: #fff;
-    width: 72.5%;
-    margin: 40px 20px;
+    width: 100%;
+    margin: 40px 0;
     border-radius: 20px;
-    height: 200px;
+    min-height: 200px;
+    padding: 40px;
     position: relative;
-    left: 22.5%;    
+    /* left: 22.5%;     */
     top: 20px;
 }
 .child h2{  
     font-size: 25px;
     position: relative;
-    top: 20px;
-    left: 10px;
-    width: 80%;
+    width: 90%;
 }
 .child p {
     position: relative;
-    left: 10px;
-    margin-top: 40px;
-    width: 80%;
+    margin-top: 20px;
+    width: 90%;
 
 }

@@ -6,45 +6,35 @@
     width: 100vw;
     height: 100vh;
 }
-.blue {
-    background: blue;
-}
 .sidebar {
     background-color: #151371;
-    width: 20%;
-    
-    /* height: 2718px; */
+    width: 20vw;
     z-index: 100;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
+    top: 0;
     overflow-y: scroll;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    transition: width 0.5s;
 }
-.sidebarDisplay {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.5s, opacity 0.5s linear;
+.sidebarContainer {
+    width: 20vw;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width 0.5s;
 }
-/* for screen sizes from 1920 - 2254 */
 
 @media only screen and (max-width: 1150px) {
-    .sidebar {
+    .sidebar, .sidebarContainer {
         width: 230px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .sidebarDisplay {
-        visibility: hidden;
-        opacity: 0;
+    .hide, .sidebarContainer {
+        width: 0;
     }
     .overlay {
         display: block;

@@ -3,7 +3,7 @@ import Skeleton from 'react-loading-skeleton';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../utilities/fetchMockData';
 
-export default function DashboardCourse({ parent, child }) {
+export default function Home({ parent, child }) {
     const [data, setData] = useState(null);
     useEffect(() => {
         fetchData(parent, child).then(data => {

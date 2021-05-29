@@ -1,0 +1,6 @@
+.parent {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width: 100%;
+    padding: 0 20px;
+}

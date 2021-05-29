@@ -14,26 +14,19 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
         else if (display === false) {
             setDisplay(true);
         }
-
+        setParent(linksTitle);
+        setChildren([]);
     }
     return (
         <div className={Styles.container}>
             <div className={linksTitle === parent
-                ? Styles.dropdown + " " + Styles.active 
+                ? Styles.dropdown + " " + Styles.active
                 : Styles.dropdown}
                 onClick={handleClick}
             >
-                <h4
-                    className={Styles.title}
-                    onClick={() => {
-                        setParent(linksTitle);
-                        setChildren([]);
-                    }}
-                >
-                    {linksTitle}
-                </h4>
+                <h4 className={Styles.title}>{linksTitle}</h4>
                 {links.length > 0 ?
-                    <img onClick={handleClick}
+                    <img
                         src='./dropdown-icon.png'
                         alt="dropdown-Icon"
                         id={Styles.dropMenuImg}
@@ -58,7 +51,7 @@ export default function Index({ linksTitle, links, parent, setParent, children, 
                             }
                         }}
                     >
-                        <a className={Styles.a} href="#">{link}</a>
+                        <span className={Styles.a}>{link}</span>
                     </li>
                 ))}
             </ul>
