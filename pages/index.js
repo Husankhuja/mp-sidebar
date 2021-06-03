@@ -14,7 +14,7 @@ export default function Home() {
         <div className={Styles.home}>
             <DashNav Open={open} setOpen={setOpen} />
             <Sidebar Open={open} setOpen={setOpen} parent={parent} setParent={setParent} children={children} setChildren={setChildren} />
-            <Dashboard parent={parent} children={children} />
+            <Dashboard parent={parent} children={children} setChildren={setChildren} />
             <div className="tw-mt-10"></div>
         </div>
     )

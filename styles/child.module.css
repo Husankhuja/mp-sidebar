@@ -23,3 +23,15 @@
     width: 90%;
 
 }
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+}
+.close:hover {
+    color: red;
+    font-size: 18px;
+    top: 19px;
+    right: 19px;
+}

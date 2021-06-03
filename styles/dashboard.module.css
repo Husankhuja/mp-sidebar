@@ -3,4 +3,36 @@
     grid-column-start: 2;
     width: 100%;
     padding: 0 20px;
+    position: relative;
+}
+.checkList {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: inherit;
+    max-width: inherit;
+    height: 40px;
+}
+.checkListFixed {
+    position: fixed;
+    width: inherit;
+    max-width: inherit;
+    height: inherit;
+    background-color: rgb(209, 209, 209);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.checkListFixed form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    margin: 0 10px;
+}
+.icon {
+    fill: red;
+    color: red;
 }

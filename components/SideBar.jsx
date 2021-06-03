@@ -2,7 +2,7 @@ import React from 'react'
 import SideBarHeader from './SideBarHeader';
 import Profile from './SideBarProfile';
 import SideBarNav from './SideBarNav';
-import ListOfLinks from '../public/Links/ListOfLinks';
+import ListOfLinks from '../utilities/ListOfLinks';
 import userData from '../public/userData';
 
 // styles
