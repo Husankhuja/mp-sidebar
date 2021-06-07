@@ -9,13 +9,13 @@ import userData from '../public/userData';
 import Styles from '../styles/sidebar.module.css';
 
 
-export default function SideBar({ Open = false, setOpen, parent, setParent, children, setChildren }) {
+export default function SideBar({ Open = false, setOpen }) {
     return (
         <div className={Open ? Styles.sidebarContainer + ' tw-shadow-md' : `${Styles.sidebarContainer} ${Styles.hide}`}>
             <div className={Open ? Styles.sidebar : `${Styles.sidebar} ${Styles.hide}`}>
                 <SideBarHeader />
                 <Profile userData={userData} />
-                <SideBarNav linksArrTop={ListOfLinks} parent={parent} setParent={setParent} children={children} setChildren={setChildren} />
+                <SideBarNav ListOfLinks={ListOfLinks} />
             </div>
             <div className={Open ? Styles.overlay : ''} onClick={() => { setOpen(!Open) }} >
             </div>
