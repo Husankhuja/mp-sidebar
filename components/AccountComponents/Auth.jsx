@@ -3,10 +3,10 @@ import Skeleton from 'react-loading-skeleton';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../utilities/fetchMockData';
 
-export default function AccountAuth({ parent, child }) {
+export default function AccountAuth() {
     const [data, setData] = useState(null);
     useEffect(() => {
-        fetchData(parent, child).then(data => {
+        fetchData('account', 'auth').then(data => {
             setData(data);
             console.log(data);
         })

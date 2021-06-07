@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router'
 import Styles from '../styles/sidebarnav.module.css';
 import Dropdown from './SideBarDropdown';
 import { BsQuestionCircleFill } from 'react-icons/bs';
 
-{/*
-Dropdown is a component that will take in a multi dimensional array of links
-in order to create the links dynamically.
-Links will be imported from one file in the public
-folder, the file will have an array of arrays,
-where each array has the first index as the title and the rest are strings 
-with links names. The links will be imported and named 
-appropriately. 
-*/}
 
-const SideBarNav = ({ linksArrTop, parent, setParent, children, setChildren }) => {
+const SideBarNav = ({ ListOfLinks }) => {
+    const router = useRouter();
+    const url = router.pathname;
+    let parent, child;
+    if (url == '/') {
+        parent = 'home';
+    } else {
+        parent = Object.keys(ListOfLinks).find(element => {
+            child = Object.keys(ListOfLinks[element]).find(subElement => ListOfLinks[element][subElement].link == url)
+            return child;
+        })
+    }
+
     const [question, setQuestion] = useState(false);
     return (
         <div className={Styles.sideBarNav}>
-            {Object.keys(linksArrTop).map((arrayKey, index) => (
+            {Object.keys(ListOfLinks).map((element, index) => (
                 <Dropdown
                     key={index}
-                    linksTitle={arrayKey}
-                    links={linksArrTop[arrayKey]}
+                    linksTitle={element}
+                    links={ListOfLinks[element]}
                     parent={parent}
-                    setParent={setParent}
-                    children={children}
-                    setChildren={setChildren}
+                    child={child}
                 />
             ))}
             <div className={Styles.questionImg}>
